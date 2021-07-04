@@ -5,11 +5,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 section {
@@ -29,6 +30,48 @@ a {
 }
 
 /* =========================================================
+navbar section
+=========================================================== */
+.navSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  padding: 0 4rem;
+  background-color: orange;
+  position: fixed;
+  width: 100vw;
+}
+
+.navSection .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.navSection nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.navSection nav ul li {
+  list-style-type: none;
+}
+
+.navSection nav ul li a {
+  color: black !important;
+}
+
+/* =========================================================
 welcome section
 ======================================================================== */
 .Hero {
@@ -43,6 +86,9 @@ welcome section
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 5rem;
+  height: 90vh;
+  overflow: hidden;
 }
 
 .Hero .leftSide {
@@ -239,5 +285,11 @@ footer section
 .footer {
   text-align: center;
   height: 10vh;
+}
+
+@media (max-width: 991.98px) {
+  .navSection {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
