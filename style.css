@@ -90,7 +90,6 @@ welcome section
           align-items: center;
   padding-top: 5rem;
   height: 90vh;
-  overflow: hidden;
 }
 
 .Hero .leftSide {
@@ -289,9 +288,144 @@ footer section
   height: 10vh;
 }
 
+/*========== 
+Medium devices (tablets, less than 992px)
+============*/
 @media (max-width: 991.98px) {
   .navSection {
     display: none;
+  }
+}
+
+/*==========
+Extra small devices (portrait phones, less than 576px)
+============*/
+@media (max-width: 675.98px) {
+  section {
+    height: auto !important;
+    padding: 0 1rem;
+  }
+  /*===========================================
+ Hero section
+===========================================*/
+  .Hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-top: 5rem;
+    overflow: hidden;
+  }
+  .Hero .leftSide {
+    height: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .Hero .leftSide h1 {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  .Hero .leftSide h2 {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  .Hero .leftSide h2 span {
+    color: orange;
+  }
+  .Hero .leftSide h3 {
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+  }
+  .Hero .leftSide p {
+    font-size: 0.7rem;
+  }
+  .Hero .leftSide button {
+    padding: 0.4rem 1rem;
+    margin-top: 10px;
+  }
+  /*===========================================
+ Dream Big section
+===========================================*/
+  .dream {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dream .leftSide {
+    overflow: hidden;
+  }
+  .dream .rightSide {
+    padding-top: 1rem;
+  }
+  .dream .rightSide h1 {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  .dream .rightSide h3 {
+    font-size: 0rem;
+    margin-bottom: 3px;
+  }
+  .dream .rightSide p {
+    font-size: 0.7rem;
+  }
+  .dream .rightSide button {
+    padding: 0.4rem 1rem;
+    margin-top: 10px;
+  }
+  /* ===========================================================================
+Experiences section
+==========================================================================*/
+  .cardSection {
+    margin: 2rem 0;
+  }
+  .cardSection .title {
+    font-size: 2rem;
+  }
+  .cardSection .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0rem;
+  }
+  .cardSection .card .leftCard {
+    min-height: 50vh;
+    margin: 20px 10px;
+    padding: 1rem 0.5rem;
+  }
+  .cardSection .card .leftCard h1 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  .cardSection .card .leftCard h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .cardSection .card .rightCard {
+    min-height: 50vh;
+    margin: 20px 10px;
+    padding: 1rem 0.5rem;
+  }
+  .cardSection .card .rightCard h1 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  .cardSection .card .rightCard h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  /* ================================================================
+footer section
+==========================================================================*/
+  .footer {
+    text-align: center;
+    padding: 4rem 0;
+  }
+  .footer p {
+    font-size: .8rem;
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=style.css.map */
